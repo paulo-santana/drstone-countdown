@@ -1,4 +1,20 @@
-export default function Clock({ time }) {
+import { useState } from "react";
+import { intervalToDuration } from "date-fns";
+
+export default function Clock({ releaseDate }) {
+  function calcTimeRemaining() {
+    return intervalToDuration({
+      start: Date.now(),
+      end: releaseDate,
+    });
+  }
+
+  const [time, setTime] = useState(calcTimeRemaining());
+
+  setTimeout(() => {
+    setTime(calcTimeRemaining());
+  }, 1000);
+
   return (
     <span>
       {time.days > 0 && (time.days > 1 ? time.days + " dias, " : " 1 dia, ")}

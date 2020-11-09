@@ -7,3 +7,72 @@
   align-items: center;
   text-align: center;
 }
+
+.fade-in {
+  animation: fadeIn ease-out 3s;
+  -webkit-animation: fadeIn ease-out 3s;
+  -moz-animation: fadeIn ease-out 3s;
+  -o-animation: fadeIn ease-out 3s;
+  -ms-animation: fadeIn ease-out 3s;
+}
+
+.greetings,
+.message,
+.getExcited {
+  opacity: 0;
+}
+
+.faded {
+  opacity: 1;
+}
+
+.buttonContainer {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
