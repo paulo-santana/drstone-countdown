@@ -29,6 +29,7 @@ export default function Home() {
   const _onReady = (event) => {
     // access to player in all event handlers via event.target
     // event.target.mute();
+    event.target.playVideo();
     setPlayer(event.target);
   };
 
