@@ -85,7 +85,7 @@ export default function Home() {
         {player && (
           <div className={styles.buttonContainer}>
             <IconButton
-              Icon={playerMuted ? FaVolumeUp : FaVolumeMute}
+              Icon={playerMuted ? FaVolumeMute : FaVolumeUp}
               onClick={handleMuteButtonClick}
             />
           </div>
